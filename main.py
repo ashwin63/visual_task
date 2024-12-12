@@ -372,7 +372,7 @@ def main():
 
         return 0
     train_loop(opt, loss_weights, logger, trainset, testset, model, optimizer)
-    if !opt.test_only:
+    if not opt.test_only:
         print('Doing test after training')
         #checkpoint = torch.load(opt.model_checkpoint)
         #model.load_state_dict(checkpoint['model_state_dict'])
