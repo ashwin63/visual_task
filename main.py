@@ -145,7 +145,7 @@ def load_dataset(opt):
 
 def create_model_and_optimizer(opt, texts):
     """Builds the model and related optimizer."""
-    print("Creating model and optimizer for", opt.model)
+    print("Creating model and optimizer for", opt.comment)
     text_embed_dim = 512 if not opt.use_bert else 768
     
     if opt.model == 'tirg':
